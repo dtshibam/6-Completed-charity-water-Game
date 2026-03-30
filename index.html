@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Quest - charity: water</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <img src="./img/cw_logo.png" alt="charity water logo" class="logo">
+      <h1>Water Quest</h1>
+      <p class="game-instructions">Collect 20 jerry cans in 30 seconds to fund a well!</p>
+    </header>
+
+    <div class="stats">
+      <div class="stat-item">
+        <p>Cans Collected</p>
+        <span id="current-cans">0</span>
+      </div>
+      <div class="stat-item">
+        <p>Time Left</p>
+        <span id="timer">30</span>s
+      </div>
+    </div>
+
+    <div id="achievements" class="achievement-message"></div>
+
+    <div class="game-grid">
+      </div>
+
+    <button id="start-game">Start Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
