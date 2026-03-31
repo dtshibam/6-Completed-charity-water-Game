@@ -11,29 +11,41 @@
 
   <div class="container">
     <header>
-      <img src="./img/cw_logo.png" alt="charity water logo" class="logo">
+      <img src="img/cw_logo.png" alt="charity water logo" class="logo">
       <h1>Water Quest</h1>
-      <p class="game-instructions">Collect 20 jerry cans in 30 seconds to fund a well!</p>
+      
+      <div class="difficulty-section">
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+          <option value="easy">Easy (15 Cans / 45s)</option>
+          <option value="normal" selected>Normal (20 Cans / 30s)</option>
+          <option value="hard">Hard (35 Cans / 20s)</option>
+        </select>
+      </div>
     </header>
 
     <div class="stats">
-      <div class="stat-item">
-        <p>Cans Collected</p>
-        <span id="current-cans">0</span>
-      </div>
-      <div class="stat-item">
-        <p>Time Left</p>
-        <span id="timer">30</span>s
-      </div>
+      <div class="stat-item"><p>Cans Collected</p><span id="current-cans">0</span></div>
+      <div class="stat-item"><p>Time Left</p><span id="timer">30</span>s</div>
     </div>
 
     <div id="achievements" class="achievement-message"></div>
 
-    <div class="game-grid">
-      </div>
+    <div class="game-grid"></div>
 
     <button id="start-game">Start Game</button>
+
+    <footer class="cw-footer">
+      <hr>
+      <p>Clean water changes everything.</p>
+      <div class="footer-links">
+        <a href="https://www.charitywater.org" target="_blank">Our Mission</a> | 
+        <a href="https://www.charitywater.org/donate" target="_blank">Donate Now</a>
+      </div>
+    </footer>
   </div>
+
+  <audio id="collect-sound" src="https://www.soundjay.com/buttons/sounds/button-3.mp3"></audio>
 
   <script src="script.js"></script>
 </body>
